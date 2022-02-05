@@ -1,0 +1,137 @@
+* {
+    -fx-primary: purple;
+    -fx-secondary: #f2f2f2;
+    -fx-primarytext: #e8e8e8;
+    -fx-primarygradient: #008086;
+    -fx-systemprimary: #333;
+    -fx-systemsecondary: orange;
+    -fx-systemprimary: #333333;
+    -fx-systemsecondary: orange;
+    -fx-systemwarning: red;
+}
+
+/* Result Tables*/
+.table-view .table-cell {
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected {
+   -fx-background-color: -fx-primary;
+   -fx-border-color: -fx-primary;
+}
+
+.table-row-cell:selected .table-cell {
+   -fx-text-fill: -fx-secondary;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:hover .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:focused .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxresultbackgroundcolorgradient {
+    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, -fx-primary, #000);
+}
+
+.fxbottompane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxvboxitembutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 0;
+}
+
+.fxvboxitembutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsidepane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtimelabel {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxroundbutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 5em;
+}
+
+.sizeL {
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+.sizeM {
+    -fx-min-width: 35px;
+    -fx-min-height: 35px;
+    -fx-max-width: 35px;
+    -fx-max-height: 35px;
+}
+
+.fxroundbutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxroundbutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxroundbutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxtitleexam {
+    -fx-background-color: -fx-primary;
+}
+
+.fxpillcombo {
+    -fx-background-radius: 1em;
+}
+
+.fxexamidlabel {
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxaddexamroot {
+    -fx-background-color: -fx-secondary;
+    -fx-border-size: 1px;
+    -fx-border-color: -fx-primary;
+}
+
+#fxwarninglabel {
+    -fx-text-fill: -fx-primary;
+    -fx-font-size: 13px;
+    -fx-text-fill: -fx-systemwarning;
+}

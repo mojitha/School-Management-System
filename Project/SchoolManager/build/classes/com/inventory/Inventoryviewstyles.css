@@ -1,0 +1,442 @@
+/* Inventory View */
+.root {
+    -fx-primary: teal;
+    -fx-secondary: #f2f2f2;
+    -fx-primarytext: #e8e8e8;
+    -fx-primarygradient: #008086;
+    -fx-ternary: steelBlue;
+    -fx-systemprimary: #333333;
+    -fx-systemsecondary: orange;
+    -fx-systemwarning: red;
+}
+
+* {
+    /*
+    -fx-primary: teal;
+    -fx-secondary: #f2f2f2;
+    -fx-primarytext: #e8e8e8;
+    -fx-primarygradient: #008086;
+    -fx-ternary: steelBlue;
+    -fx-systemprimary: #333333;
+    -fx-systemsecondary: orange;
+    -fx-systemwarning: red;
+    */
+}
+
+.fxinventoryborder {
+    -fx-border-width: 1px;
+    -fx-border-color: -fx-primary;
+    -fx-border-radius: 2em;
+}
+
+.fxinventorybackgroundcolorgradient {
+    -fx-background-color: linear-gradient(from 50% 50% to 0% 0%, -fx-primary, -fx-primary);
+}
+
+.fxinventorybackgroundcolorprimary {
+    -fx-background-color: -fx-primary;
+}
+
+.fxinventorybackgroundcolorsecondary {
+    -fx-background-color: -fx-secondary;
+}
+
+.fxinventorytextfillprimary {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxinventorytextfillsecondary {
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxmainborderpane {
+    -fx-background-color: -fx-secondary;
+}
+
+.fxsidepane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtitlebar {
+    -fx-background-color: -fx-primary;
+}
+    
+.fxtitlelabel {
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxtitlebarsecondary {
+    -fx-background-color: -fx-primarytext;
+}
+
+.fxtitlelabelsecondary {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxtitlebarternary {
+    -fx-background-color: -fx-ternary;
+}
+
+.fxtitlelabelternary {
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxbottompane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxbottompanesecondary {
+    -fx-background-color: -fx-primarytext;
+}
+
+#branding {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxtimelabel {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+    -fx-background-radius: 0;
+}
+
+.fxvboxitembutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsearchitembox {
+    -fx-background-radius: 3em;
+}
+
+.fxsearchcategorybox {
+    -fx-background-radius: 3em;
+}
+
+.fxsearchbookbox {
+    -fx-background-radius: 3em;
+}
+
+.fxinventorytablecombobox {
+    -fx-background-radius: 3em;
+}
+
+.fxbooktablecombobox {
+    -fx-background-radius: 3em;
+}
+
+/* Inventory View Home */
+
+/* Inventory Tables*/
+.table-view .table-cell {
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected {
+   -fx-background-color: -fx-primary;
+   -fx-border-color: -fx-primary;
+}
+
+.table-row-cell:selected .table-cell {
+   -fx-text-fill: -fx-secondary;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:hover .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:focused .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+/* Inventory View Inventory */
+.fxinventorysplitpane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxinventorysplitpane > .split-pane-divider {
+    -fx-background-color: -fx-primary;
+    -fx-padding: 0 0.01em 0 0.01em;  
+}
+
+.fxroundbutton {
+    -fx-background-radius: 5em;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+.fxroundbutton:hover {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxroundbutton:pressed {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpillbutton {
+    -fx-background-radius: 1em;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.fxpillbutton:hover {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpillbutton:pressed {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+/* pill outline button */
+.fxpilloutlinebutton {
+    -fx-background-radius: 1em;
+    -fx-background-color: -fx-secondary;
+    -fx-border-color: -fx-primary;
+    -fx-border-width: 1px;
+    -fx-border-radius: 1em;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpilloutlinebutton:hover {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpilloutlinebutton:pressed {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpilloutlinebutton:focused {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+/* dark pill button */
+.fxpilloutlinebuttondark {
+    -fx-background-radius: 1em;
+    -fx-background-color: -fx-secondary;
+    -fx-border-color: -fx-systemprimary;
+    -fx-border-width: 1px;
+    -fx-border-radius: 1em;
+    -fx-text-fill: -fx-systemprimary;
+}
+
+.fxpilloutlinebuttondark:hover {
+    -fx-background-color: -fx-systemprimary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpilloutlinebuttondark:pressed {
+    -fx-background-color: -fx-systemprimary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpilloutlinebuttondark:focused {
+    -fx-background-color: -fx-systemprimary;
+    -fx-text-fill: -fx-secondary;
+}
+
+/* system pill button */
+.fxpilloutlinebuttonsystem {
+    -fx-background-radius: 1em;
+    -fx-background-color: -fx-secondary;
+    -fx-border-color: -fx-systemsecondary;
+    -fx-border-width: 1px;
+    -fx-border-radius: 1em;
+    -fx-text-fill: -fx-systemsecondary;
+}
+
+.fxpilloutlinebuttonsystem:hover {
+    -fx-background-color: -fx-systemsecondary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpilloutlinebuttonsystem:pressed {
+    -fx-background-color: -fx-systemsecondary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpilloutlinebuttonsystem:focused {
+    -fx-background-color: -fx-systemsecondary;
+    -fx-text-fill: -fx-secondary;
+}
+
+/* Inventory View Books */
+.fxroundbuttonsecondary {
+    -fx-background-radius: 5em;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+.fxroundbuttonsecondary:hover {
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxroundbuttonsecondary:pressed {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-ternary;
+}
+
+.fxpillbuttonsecondary {
+    -fx-background-radius: 1em;
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.fxpillbuttonsecondary:hover {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-ternary;
+}
+
+.fxpillbuttonsecondary:pressed {
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+/* pill outline button secondary */
+.fxpilloutlinebuttonsecondary {
+    -fx-background-radius: 1em;
+    -fx-background-color: -fx-secondary;
+    -fx-border-color: -fx-ternary;
+    -fx-border-width: 1px;
+    -fx-border-radius: 1em;
+    -fx-text-fill: -fx-ternary;
+}
+
+.fxpilloutlinebuttonsecondary:hover {
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpilloutlinebuttonsecondary:pressed {
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpilloutlinebuttonsecondary:focused {
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxinventorymanagertooltip {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.fxinventorymanagertooltipinverted {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+    /* ITEM */
+    /* add item */
+    .fxadditemroot {
+        -fx-background-color: -fx-secondary;
+        -fx-border-size: 1px;
+        -fx-border-color: -fx-primary;
+    }
+    
+    #fxwarninglabel {
+        -fx-text-fill: -fx-primary;
+        -fx-font-size: 13px;
+        -fx-text-fill: -fx-systemwarning;
+    }
+    
+    /* change item */
+    .fxchangeitemroot {
+        -fx-background-color: -fx-secondary;
+        -fx-border-size: 1px;
+        -fx-border-color: -fx-primary;
+    }
+    
+    /* BOOK*/
+    /* add book */
+    .fxaddbookroot {
+        -fx-background-color: -fx-secondary;
+        -fx-border-size: 1px;
+        -fx-border-color: -fx-primary;
+    }
+    
+/* Inventory View Statistics */
+
+/* Inventory View Settings */
+
+/* Inventory View Notifications */
+
+/* Inventory View User */
+.fxroundimgview {
+    -fx-background-radius: 5em;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 8, 0, 0, 0);
+}
+
+.fxrightpane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxuserdetaillbl {
+    -fx-text-fill: -fx-secondary;
+}
+
+#fxlogoutbtn {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 1em;
+}
+
+#fxlogoutbtn:hover {
+    -fx-background-color: -fx-systemsecondary;
+    -fx-text-fill: -fx-systemprimary;
+}
+
+#fxlogoutbtn:pressed {
+    -fx-background-color: -fx-systemprimary;
+    -fx-text-fill: -fx-systemsecondary;
+}
+
+    /* Edit User */
+    .fxwarningtext {
+        -fx-text-fill: -fx-primary;
+        -fx-background-color: -fx-primarytext;
+        -fx-background-radius: 1em;
+    }
+    
+    .fxedituserroot {
+        -fx-background-color: -fx-secondary;
+        -fx-border-size: 1px;
+        -fx-border-color: -fx-primary;
+    }

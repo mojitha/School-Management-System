@@ -1,0 +1,166 @@
+* {
+    -fx-primary: brown;
+    -fx-secondary: #f2f2f2;
+    -fx-primarytext: #e8e8e8;
+    -fx-primarygradient: black;
+    -fx-systemprimary: #333;
+    -fx-systemsecondary: orange;
+    -fx-systemprimary: #333333;
+    -fx-systemsecondary: orange;
+    -fx-systemwarning: red;
+}
+
+/* Subject Tables*/
+.table-view .table-cell {
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected {
+   -fx-background-color: -fx-primary;
+   -fx-border-color: -fx-primary;
+}
+
+.table-row-cell:selected .table-cell {
+   -fx-text-fill: -fx-secondary;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:hover .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:focused .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsubjectbackgroundcolorgradient {
+    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, -fx-primary, -fx-primarygradient);
+}
+
+.fxsubjectbackgroundcolorprimary {
+    -fx-background-color: -fx-primary;
+}
+
+.fxsubjectbackgroundcolorsecondary {
+    -fx-background-color: -fx-secondary;
+}
+
+.fxbottompane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxvboxitembutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 0;
+}
+
+.fxvboxitembutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsearchboxtxt {
+    -fx-background-radius: 3em;
+}
+
+.fxpillbutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 1em;
+}
+
+.fxpillbutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpillbutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpillbutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxroundbutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 5em;
+    -fx-min-width: 55px;
+    -fx-min-height: 55px;
+    -fx-max-width: 55px;
+    -fx-max-height: 55px;
+}
+
+.fxroundbutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxroundbutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxroundbutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsubjecttablecombobox {
+    -fx-background-radius: 3em;
+}
+
+.fxsidepane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtitlebar {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtitlelabel {
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxtimelabel {
+    -fx-text-fill: -fx-primary;
+}
+
+#fxwarninglabel {
+    -fx-text-fill: -fx-primary;
+    -fx-font-size: 13px;
+    -fx-text-fill: -fx-systemwarning;
+}
+
+.fxaddsubjectroot {
+    -fx-background-color: -fx-secondary;
+    -fx-border-size: 1px;
+    -fx-border-color: -fx-primary;
+}
+
+.fxupdatesubjectroot {
+    -fx-background-color: -fx-secondary;
+    -fx-border-size: 1px;
+    -fx-border-color: -fx-primary;
+}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.MainviewController">
+    <stylesheets>
+        <URL value="@Mainviewstyles.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="185.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" styleClass="fxmainborderpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <BorderPane prefHeight="72.0" prefWidth="1000.0" styleClass="fxmaindarkbg" BorderPane.alignment="CENTER">
+               <center>
+                  <Label fx:id="fxtimelabel" styleClass="fxmainprimarytext" text="time" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets left="10.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </center>
+               <right>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="fxuserbtn" mnemonicParsing="false" text="User" textAlignment="CENTER">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </right>
+               <left>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="fxmainprimarytext" text="SchoolManager v1.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label styleClass="fxmainprimarytext" text="Administrator">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </left>
+            </BorderPane>
+         </top>
+         <bottom>
+            <BorderPane prefHeight="36.0" prefWidth="1000.0" styleClass="fxmaindarkbg" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="998.0" styleClass="fxmaindarkbg" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="200.0" prefWidth="220.0">
+                     <children>
+                        <Button fx:id="fxstudentmbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openFunctionView" prefHeight="220.0" prefWidth="250.0" styleClass="fxmainbutton" text="Student Management" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/schoolmanager/student_filled_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="fxsubjectmbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openFunctionView" prefHeight="220.0" prefWidth="250.0" styleClass="fxmainbutton" text="Subject Management" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/schoolmanager/subject_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="fxsattendancembtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openFunctionView" prefHeight="220.0" prefWidth="250.0" styleClass="fxmainbutton" text="Attendance Management" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/schoolmanager/attendance_filled_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="fxstaffmbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openFunctionView" prefHeight="220.0" prefWidth="250.0" styleClass="fxmainbutton" text="Staff Management" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/schoolmanager/edit_user_filled_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="fxlibrarymbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openFunctionView" prefHeight="220.0" prefWidth="250.0" styleClass="fxmainbutton" text="Library Management" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/schoolmanager/book_shelf_filled_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="fxinventorymbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openFunctionView" prefHeight="220.0" prefWidth="250.0" styleClass="fxmainbutton" text="Inventory Management" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/schoolmanager/inventory_flow_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="fxexammbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openFunctionView" prefHeight="220.0" prefWidth="250.0" styleClass="fxmainbutton" text="Exam Management" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/schoolmanager/exam_filled_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="fxresultmbtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openFunctionView" prefHeight="220.0" prefWidth="250.0" styleClass="fxmainbutton" text="Result Management" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/schoolmanager/exam_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

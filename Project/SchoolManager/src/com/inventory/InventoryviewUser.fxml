@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.InventoryviewUserController">
+    <stylesheets>
+        <URL value="@Inventoryviewstyles.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="508.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox maxWidth="600.0" prefWidth="220.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="fxprofilepictureimgview" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="fxroundimgview">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../img/user/shibe_349px.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <top>
+            <StackPane prefHeight="36.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="20.0" text="User">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </top>
+         <bottom>
+            <Pane prefHeight="10.0" prefWidth="200.0" styleClass="fxbottompane" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefWidth="290.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Name">
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="ID">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Username">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Password">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Email">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Phone">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Address">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Bio">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="279.0" text="Designation">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="296.0" text="Qualification">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefWidth="290.0" spacing="20.0" styleClass="fxrightpane" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="fxnamelbl" styleClass="fxuserdetaillbl" text="(name)">
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxidlbl" styleClass="fxuserdetaillbl" text="(id)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxusernamelbl" layoutX="20.0" layoutY="57.0" styleClass="fxuserdetaillbl" text="(username)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxpasswordlbl" layoutX="10.0" layoutY="74.0" styleClass="fxuserdetaillbl" text="(password)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxemaillbl" layoutX="20.0" layoutY="20.0" styleClass="fxuserdetaillbl" text="(email)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxphonelbl" layoutX="20.0" layoutY="57.0" styleClass="fxuserdetaillbl" text="(phone)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxaddresslbl" layoutX="10.0" layoutY="74.0" styleClass="fxuserdetaillbl" text="(address)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxbiolbl" layoutX="10.0" layoutY="91.0" styleClass="fxuserdetaillbl" text="(bio)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxdesignationlbl" layoutX="20.0" layoutY="279.0" styleClass="fxuserdetaillbl" text="(designation)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxqualificationlbl" layoutX="10.0" layoutY="296.0" styleClass="fxuserdetaillbl" text="(qualification)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="25.0" prefWidth="290.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="fxeditprofilebtn" mnemonicParsing="false" onAction="#loadEditProfile" prefWidth="60.0" styleClass="fxpillbutton" text="Edit">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <tooltip>
+                                    <Tooltip styleClass="fxinventorymanagertooltip" text="click to edit profile" />
+                                 </tooltip>
+                              </Button>
+                              <Button id="fxlogoutbtn" fx:id="fxlogoutbtn" mnemonicParsing="false" onAction="#loadLogin" prefWidth="60.0" text="LogOut">
+                                 <tooltip>
+                                    <Tooltip styleClass="fxinventorymanagertooltip" text="To logout" />
+                                 </tooltip>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

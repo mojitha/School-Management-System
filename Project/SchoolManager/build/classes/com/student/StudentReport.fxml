@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.student.StudentReportController">
+    <stylesheets>
+        <URL value="@Studentviewstyles.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="6.0" prefHeight="502.4" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <BorderPane prefHeight="70.0" prefWidth="200.0" styleClass="fxtitlebar" BorderPane.alignment="CENTER">
+               <left>
+                  <Label prefHeight="36.0" prefWidth="193.0" styleClass="fxtitlelabel" text="Student Report" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets left="10.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </left>
+            </BorderPane>
+         </top>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="377.6" minHeight="10.0" prefHeight="377.6" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="171.60001220703128" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <ComboBox prefWidth="80.0" promptText="Year">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <ComboBox prefWidth="80.0" promptText="Grade" />
+                        <ComboBox prefWidth="80.0" promptText="Class" />
+                        <Button mnemonicParsing="false" styleClass="fxroundbutton" text="GO">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label text="Group by">
+                           <HBox.margin>
+                              <Insets left="400.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox prefWidth="150.0" promptText="Select">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <ListView prefHeight="200.0" prefWidth="700.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ListView>
+                        <VBox prefHeight="200.0" prefWidth="150.0" spacing="20.0">
+                           <children>
+                              <HBox prefHeight="36.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Buddhist" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Catholic" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="46.0" prefHeight="36.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Muslim" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="46.0" prefHeight="36.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Other" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="82.0" prefHeight="36.0" prefWidth="200.0">
+                                 <VBox.margin>
+                                    <Insets top="80.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label text="Total" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="720.0" layoutY="10.0" prefHeight="200.0" prefWidth="150.0" spacing="20.0">
+                           <children>
+                              <HBox prefHeight="36.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="(buddhistcount)" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="(catholiccount" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="46.0" prefHeight="36.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="(muslimcount)" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="46.0" prefHeight="36.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="(othercount)" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="82.0" prefHeight="36.0" prefWidth="200.0">
+                                 <VBox.margin>
+                                    <Insets top="80.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label text="(total)" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Button mnemonicParsing="false" text="Print">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Cancel">
+                           <HBox.margin>
+                              <Insets left="730.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Button">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

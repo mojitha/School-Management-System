@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.InventoryviewSettingsController">
+    <stylesheets>
+        <URL value="@Inventoryviewstyles.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="508.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <StackPane prefHeight="36.0" prefWidth="200.0" styleClass="fxtitlebar" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="fxtitlelabel" text="Settings">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </top>
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="200.0">
+                     <children>
+                        <Label text="General Settings">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="400.0" styleClass="fxbottompanesecondary">
+                     <children>
+                        <Label text="Theme">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="400.0" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="200.0" spacing="10.0" styleClass="fxbottompanesecondary">
+                     <children>
+                        <ToggleButton fx:id="fxthemedefaultbtn" accessibleRole="INCREMENT_BUTTON" mnemonicParsing="false" onAction="#changeUI" prefHeight="25.0" prefWidth="120.0" selected="true" styleClass="fxpilloutlinebutton" text="Default">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ToggleButton>
+                        <ToggleButton fx:id="fxthemesecondarybtn" accessibleRole="INCREMENT_BUTTON" layoutX="97.0" layoutY="15.0" mnemonicParsing="false" onAction="#changeUI" prefHeight="25.0" prefWidth="120.0" styleClass="fxpilloutlinebuttonsecondary" text="Secondary UI" />
+                        <ToggleButton fx:id="fxthemedarkbtn" accessibleRole="INCREMENT_BUTTON" layoutX="20.0" layoutY="15.0" mnemonicParsing="false" onAction="#changeUI" prefHeight="25.0" prefWidth="120.0" styleClass="fxpilloutlinebuttondark" text="Dark UI" />
+                        <ToggleButton fx:id="fxthemesystembtn" accessibleRole="INCREMENT_BUTTON" layoutX="174.0" layoutY="15.0" mnemonicParsing="false" onAction="#changeUI" prefHeight="25.0" prefWidth="120.0" styleClass="fxpilloutlinebuttonsystem" text="System UI" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

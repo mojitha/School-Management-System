@@ -1,0 +1,69 @@
+* {
+    -fx-primary: orange;
+    -fx-secondary: #f2f2f2;
+    -fx-primarytext: #b2b2b2;
+    -fx-ternary: #333333;
+}
+
+.root {
+    -fx-background-color: -fx-secondary;
+}
+
+.fxmainborderpane {
+    -fx-border-size: 2px;
+    -fx-border-color: -fx-ternary;
+}
+
+#fxuserbtn {
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 5em;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+#fxuserbtn:hover {
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 5em;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+.fxmainbutton {
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 0;
+}
+
+.fxmainbutton:hover {
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxmainbutton:pressed {
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxmainbutton:focused {
+    -fx-background-color: -fx-ternary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxmaindarkbg {
+    -fx-background-color: -fx-ternary;
+}
+
+.fxmaindarktext {
+    -fx-text-fill: -fx-ternary;
+}
+
+.fxmainprimarytext {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxmainlighttext {
+    -fx-text-fill: -fx-secondary;
+}

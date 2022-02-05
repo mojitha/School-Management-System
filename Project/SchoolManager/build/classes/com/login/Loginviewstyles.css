@@ -1,0 +1,70 @@
+* {
+    -fx-primary: #333;
+    -fx-secondary: orange;
+    -fx-primarytext: #b2b2b2;
+    -fx-terinary: #303030;
+}
+
+.mainFxmlClass {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtitlelabel {
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxusernametxt {
+    -fx-background-color: -fx-terinary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.fxusernametxt:focused {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpasswordtxt {
+    -fx-background-color: -fx-terinary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.fxpasswordtxt:focused {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+/* login interface buttons */
+.fxloginuibtn {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+    -fx-border-width: 1px;
+    -fx-border-color: -fx-secondary;
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+.fxloginuibtn:hover {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.fxloginuibtn:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxloginuibtn:pressed {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+/* status label */
+.fxstatuslabel {
+    -fx-text-fill: -fx-primarytext;
+}
+
+/* tooltips */
+.fxlogintooltip {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}

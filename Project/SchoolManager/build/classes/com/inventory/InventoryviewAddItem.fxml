@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.InventoryviewAddItemController">
+    <stylesheets>
+        <URL value="@Inventoryviewstyles.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" styleClass="fxadditemroot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="400.0" spacing="25.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="ItemID">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Item description">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="280.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Category">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Quantity">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="55.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Cost (LKR)">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Date Received">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="100.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Expire Date">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label id="fxwarninglabel" fx:id="fxwarninglbl" text="(warning)">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="400.0" spacing="25.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="fxitemIdlbl" alignment="BASELINE_CENTER" contentDisplay="CENTER" text="(resourceID)" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="fxdescriptiontxt" alignment="TOP_LEFT" prefWidth="300.0" promptText="(max 50 characters)">
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="Name or Brand of item" />
+                           </tooltip></TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="380.0" prefHeight="25.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ComboBox fx:id="fxcategorycmbox" prefWidth="150.0" promptText="select category..">
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="Select Item category" />
+                           </tooltip></ComboBox>
+                        <Button fx:id="fxaddcategorybtn" mnemonicParsing="false" onAction="#loadManageCategory" styleClass="fxpilloutlinebutton" text="Add">
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="adds new catrgory if not found" />
+                           </tooltip></Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="fxquantitytxt" prefWidth="150.0" promptText="Enter Quantity..">
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="Numerical values only" />
+                           </tooltip></TextField>
+                        <ComboBox fx:id="fxunitcmbox" prefWidth="120.0" promptText="choose units..">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="Select units" />
+                           </tooltip>
+                        </ComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="fxcosttxt" prefWidth="150.0" promptText="Enter cost.. ">
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="Enter numerical values only" />
+                           </tooltip></TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <DatePicker fx:id="fxdatereceiveddtpickr" promptText="Choose Date..">
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="choose a previous date" />
+                           </tooltip></DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="fxexpiredatetxt" prefWidth="150.0" promptText="yyyy-MM-dd">
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="Enter an expire Date for the item" />
+                           </tooltip></TextField>
+                        <CheckBox fx:id="fxexpiredatechckbx" mnemonicParsing="false" onAction="#checkExpireDate" prefHeight="17.0" prefWidth="140.0" text="Not Specified">
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="Select if not specific date given" />
+                           </tooltip></CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="fxadditemOKbtn" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#okAddItem" prefWidth="80.0" styleClass="fxpillbutton" text="OK">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="click to verify" />
+                           </tooltip>
+                        </Button>
+                        <Button fx:id="fxadditemcancelbtn" mnemonicParsing="false" onAction="#closeAddItem" prefWidth="80.0" styleClass="fxpillbutton" text="Cancel">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <tooltip>
+                              <Tooltip styleClass="fxinventorymanagertooltip" text="click to return to table" />
+                           </tooltip>
+                        </Button>
+                        <ComboBox fx:id="fxstatuscmbox" prefWidth="150.0" promptText="Select" visible="false" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </right>
+         <top>
+            <BorderPane prefHeight="60.0" prefWidth="200.0" styleClass="fxtitlebar" BorderPane.alignment="CENTER">
+               <left>
+                  <Label alignment="TOP_LEFT" styleClass="fxtitlelabel" text="Add Item" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets left="20.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </left>
+               <right>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" right="20.0" top="10.0" />
+                     </BorderPane.margin>
+                     <image>
+                        <Image url="@../../img/schoolmanager/add_shopping_cart_filled_100px(secondary).png" />
+                     </image>
+                  </ImageView>
+               </right>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

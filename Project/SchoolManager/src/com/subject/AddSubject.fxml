@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" styleClass="mainFxmlClass" stylesheets="@Subjectviewstyles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.subject.AddSubjectController">
+   <children>
+      <BorderPane prefHeight="502.0" prefWidth="800.0" styleClass="fxaddsubjectroot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="200.0" styleClass="fxtitlebar" BorderPane.alignment="CENTER">
+               <left>
+                  <Label prefHeight="36.0" prefWidth="175.0" styleClass="fxtitlelabel" text="Add Subject" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets left="20.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </left>
+            </BorderPane>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="300.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Sub No">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Subject">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="36.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Grade">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="61.0" prefHeight="25.0" prefWidth="200.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="300.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="fxsubjectIdlbl" text="(SubNo)" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="fxsubjectnametxt" prefHeight="26.0" prefWidth="224.0" promptText="Enter Subject Name..." />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="36.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="fxsubjectgradecmbbx" prefWidth="120.0" promptText="Select Grade" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="400.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="fxokbtn" mnemonicParsing="false" onAction="#okAddSubject" prefHeight="26.0" prefWidth="80.0" styleClass="fxpillbutton" text="OK" />
+                        <Button fx:id="fxcancelbtn" mnemonicParsing="false" onAction="#closeAddSubject" prefHeight="26.0" prefWidth="80.0" styleClass="fxpillbutton" text="Cancel" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </right>
+         <bottom>
+            <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <Label id="fxwarninglabel" fx:id="fxwarninglbl" text="(warning)">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

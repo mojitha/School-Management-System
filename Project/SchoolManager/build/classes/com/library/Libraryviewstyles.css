@@ -1,0 +1,68 @@
+* {
+    -fx-primary: SteelBlue;
+    -fx-secondary: #f2f2f2;
+    -fx-primarytext: #e8e8e8;
+}
+
+/* Library Tables*/
+.table-view .table-cell {
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected {
+   -fx-background-color: -fx-primary;
+   -fx-border-color: -fx-primary;
+}
+
+.table-row-cell:selected .table-cell {
+   -fx-text-fill: -fx-secondary;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:hover .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:focused .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxbottompane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxvboxitembutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 0;
+}
+
+.fxvboxitembutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsidepane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtimelabel {
+    -fx-text-fill: -fx-primary;
+}

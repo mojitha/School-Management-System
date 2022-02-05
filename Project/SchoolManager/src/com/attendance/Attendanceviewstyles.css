@@ -1,0 +1,191 @@
+* {
+    -fx-primary: /*seagreen*/#1DB954;
+    -fx-secondary: #f2f2f2;
+    -fx-primarytext: #e8e8e8;
+    -fx-warning: red;
+    -fx-systemprimary: #333;
+    -fx-systemsecondary: orange;
+    -fx-systemprimary: #333333;
+    -fx-systemsecondary: orange;
+    -fx-systemwarning: red;
+}
+
+/* Attendance Tables*/
+.table-view .table-cell {
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected {
+   -fx-background-color: -fx-primary;
+   -fx-border-color: -fx-primary;
+}
+
+.table-row-cell:selected .table-cell {
+   -fx-text-fill: -fx-secondary;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:hover .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:focused .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxstudentbackgroundcolorgradient {
+    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, -fx-primary, -fx-primarygradient);
+}
+
+.fxstudentbackgroundcolorprimary {
+    -fx-background-color: -fx-primary;
+}
+
+.fxstudentbackgroundcolorsecondary {
+    -fx-background-color: -fx-secondary;
+}
+
+.fxwarningtooltip {
+    -fx-background-color: -fx-warning;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxattednacetooltip {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxbottompane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxvboxitembutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 0;
+}
+
+.fxvboxitembutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsidepane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtimelabel {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxtitlelabel {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxtitlebar {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtitlelabel {
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxhomegridupperhalf {
+    -fx-background-color: -fx-primary;
+}
+
+.fxgridupperhalftext {
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxhomegridlowerhalf {
+    -fx-background-color: -fx-primarytext;
+}
+
+.fxgridlowerhalftext {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsearchbox {
+    -fx-background-radius: 3em;
+}
+
+.fxroundbutton {
+    -fx-background-radius: 5em;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+.fxroundbutton:hover {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxroundbutton:pressed {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxtoppane {
+    -fx-background-color: -fx-secondary;
+}
+
+.fxpillcombo {
+    -fx-background-radius: 1em;
+}
+
+.fxpillbutton {
+    -fx-background-radius: 3em;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpillbutton:hover {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpillbutton:pressed {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxpresentabsenttablecolumn {
+    -fx-alignment: CENTER;
+}
+
+.fxtextprimarylabel {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxmarkattendanceroot {
+    -fx-background-color: -fx-secondary;
+    -fx-border-size: 1px;
+    -fx-border-color: -fx-primary;
+}
+
+#fxwarninglabel {
+    -fx-text-fill: -fx-primary;
+    -fx-font-size: 13px;
+    -fx-text-fill: -fx-systemwarning;
+}
+

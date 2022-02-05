@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@Examviewstyles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.AddExamController">
+   <children>
+      <BorderPane prefHeight="502.0" prefWidth="800.0" styleClass="fxaddexamroot" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="200.0" spacing="35.0" BorderPane.alignment="TOP_LEFT">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="50.0" right="100.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Grade">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Subject">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Year">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="60.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Term">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="85.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="StartTime">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="EndTime">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="135.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Date">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="160.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label id="fxwarninglabel" fx:id="fxwarninglbl" text="(warning)">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="200.0" spacing="35.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" right="100.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="fxselectgradecmbbx" onAction="#setSubjects" prefWidth="150.0" promptText="select" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="fxselectsubjectcmbbx" prefWidth="150.0" promptText="select" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="fxexamyeartxt" promptText="Enter exam year" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="fxselecttermcmbbx" prefWidth="100.0" promptText="select" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="fxstarttimetxt" promptText="hh:mm" />
+                        <ComboBox fx:id="fxselectstarttimecmbbx" onAction="#setStartTime" prefWidth="120.0" promptText="SELECT" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="fxendtimetxt" promptText="hh:mm" />
+                        <ComboBox fx:id="fxselectendtimecmbbx" onAction="#setEndTime" prefWidth="120.0" promptText="SELECT" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="135.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <DatePicker fx:id="fxexamdatedtpickr" onAction="#changeYear" promptText="ExamDate" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="60.0" prefHeight="25.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="fxokbtn" mnemonicParsing="false" onAction="#okAddNewExam" prefWidth="80.0" text="OK" />
+                        <Button fx:id="fxcancelbtn" mnemonicParsing="false" onAction="#closeAddExam" prefWidth="80.0" text="Cancel" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </right>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="200.0" styleClass="fxtitleexam" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="fxvboxitembutton" text="Add Exam">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="fxexamidlbl" styleClass="fxexamidlabel" text="(examID)">
+                     <HBox.margin>
+                        <Insets left="500.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

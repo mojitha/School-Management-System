@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.InventoryviewAddCategoryController">
+    <stylesheets>
+        <URL value="@Inventoryviewstyles.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <BorderPane prefHeight="60.0" prefWidth="200.0" styleClass="fxtitlebarsecondary" BorderPane.alignment="CENTER">
+               <left>
+                  <Label styleClass="fxtitlelabelsecondary" text="Add Item Category" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="10.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </left>
+               <right>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../../img/schoolmanager/joyent_filled_100px(secondary).png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </right>
+            </BorderPane>
+         </top>
+         <left>
+            <VBox prefHeight="200.0" prefWidth="300.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Add Category">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="fxaddcategorytxt" promptText="(max 30 chars.)">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="fxaddcategorybtn" mnemonicParsing="false" onAction="#saveCategory" prefWidth="60.0" styleClass="fxpilloutlinebutton" text="Enter">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label id="fxwarninglabel" fx:id="fxwarninglbl" alignment="TOP_LEFT" text="(warning)" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="25.0" text="Change Category">
+                     <VBox.margin>
+                        <Insets left="10.0" top="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="fxchangecategorytxt" disable="true" layoutX="20.0" layoutY="52.0" promptText="(max 30 chars.)">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="fxchangecategorybtn" disable="true" layoutX="20.0" layoutY="87.0" mnemonicParsing="false" onAction="#changeCategory" prefWidth="60.0" styleClass="fxpilloutlinebutton" text="Change">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Search Category">
+                     <VBox.margin>
+                        <Insets left="10.0" top="80.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="fxsearchcategorytxt" onKeyPressed="#searchCategories" promptText="Search Category" styleClass="fxsearchcategorybox">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Available Categories">
+                     <VBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ListView fx:id="fxavailablecategorieslstview" onMouseClicked="#editCategory" prefHeight="480.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ListView>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <Pane prefHeight="10.0" prefWidth="200.0" styleClass="fxbottompanesecondary" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

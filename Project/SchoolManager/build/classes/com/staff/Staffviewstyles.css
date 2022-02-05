@@ -1,0 +1,160 @@
+* {
+    -fx-primary: crimson;
+    -fx-secondary: #f2f2f2;
+    -fx-primarytext: #e8e8e8;
+    -fx-systemsecondary: orange;
+    -fx-systemprimary: #333333;
+    -fx-systemsecondary: orange;
+    -fx-systemwarning: red;
+    -fx-primarygradient: red;
+}
+
+/* Staff Tables*/
+.table-view .table-cell {
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected {
+   -fx-background-color: -fx-primary;
+   -fx-border-color: -fx-primary;
+}
+
+.table-row-cell:selected .table-cell {
+   -fx-text-fill: -fx-secondary;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:hover .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: -fx-secondary;
+}
+
+.table-row-cell:focused .table-cell {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxstaffbackgroundcolorgradient {
+    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, -fx-primary, -fx-primarygradient);
+}
+
+.fxstaffbackgroundcolorprimary {
+    -fx-background-color: -fx-primary;
+}
+
+.fxstaffbackgroundcolorsecondary {
+    -fx-background-color: -fx-secondary;
+}
+
+.fxbottompane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxvboxitembutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 0;
+}
+
+.fxvboxitembutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxvboxitembutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxsidepane {
+    -fx-background-color: -fx-primary;
+}
+
+.fxtimelabel {
+    -fx-text-fill: -fx-primary;
+}
+
+.fxtitlebar{
+    -fx-background-color: -fx-primary;
+    
+}
+.fxtitlelabel{
+    -fx-text-fill: -fx-secondary;
+}
+
+.fxroundutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+    -fx-background-radius: 5em;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+.fxroundutton:hover {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxroundutton:pressed {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpillbutton {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: 1em;
+}
+
+.fxpillbutton:hover {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpillbutton:pressed {
+    -fx-background-color: -fx-primarytext;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxpillbutton:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.fxaddstaffroot {
+    -fx-background-color: -fx-secondary;
+    -fx-border-size: 1px;
+    -fx-border-color: -fx-primary;
+}
+
+.fxstaffcombobox {
+    -fx-background-radius: 3em;
+}
+
+.fxsearchboxtxt {
+    -fx-background-radius: 3em;
+}
+
+#fxwarninglabel {
+    -fx-text-fill: -fx-primary;
+    -fx-font-size: 13px;
+    -fx-text-fill: -fx-systemwarning;
+}
+
+.fxchangestaffroot {
+    -fx-background-color: -fx-secondary;
+    -fx-border-size: 1px;
+    -fx-border-color: -fx-primary;
+}
